@@ -10,17 +10,4 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
-	<pluginRepositories>
-		<pluginRepository>
-			<id>thirdparty</id>
-			<name>3rd party</name>
-			<url>http://194.85.135.10:8081/nexus/content/repositories/thirdparty/</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</pluginRepository>
-	</pluginRepositories>
 </project>
