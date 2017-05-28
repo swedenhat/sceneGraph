@@ -1,0 +1,41 @@
+@startuml
+
+title Class Diagramm for SceneGraph
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+interface XmlProcessor {
+..<size:10>methods</size>..
++outputToFile(String xmlFileName, String fileName): void
++outputToFile(Document doc, String fileName): void
+
+==
+<i>Parses a doc or an xml containing the scene graph</i>
+<i>and outputs it to a file in any suitable visual</i>
+<i>form: an image, a pdf, anything</i>
+}
+
+class SceneGraph {
+..<size:10>fields</size>.. 
+-{static}Class[] filterNodes;
+-{static}Class[] leafNodes;
+-{static}int id;
+==
+..<size:10>constructors</size>..
+-SceneGraph()
+..<size:10>methods</size>..
++{static}convertToXml (Parent root, String fileName): Document
++{static}setLeafNodes (Class[] leafs): void
++{static}setNodeFiltering (Class[] leafs): void
+
+==
+<i>Converts the scene graph to an xml output and saves it to file.</i>
+}
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'PriorityCallable-up-|>Prioritized: implements
+'ThreadTerminal .left.> Priority: uses
+
+
+@enduml

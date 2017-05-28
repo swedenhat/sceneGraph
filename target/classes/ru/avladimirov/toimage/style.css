@@ -1,0 +1,26 @@
+.root {
+		-fx-background-color: rgba(255, 255 ,255 , 1);
+}
+
+Berry {
+	-fx-border-width: 1;
+	-fx-border-radius: 5;
+	-fx-border-color: #559955;
+	-fx-background-color: rgba(255, 255 ,255 , 2);
+	-fx-background-radius: 5;
+		-fx-padding: 5; 
+
+}
+
+Bunch {
+}
+
+
+#bunch1,
+#bunch2
+{
+	-fx-padding: 10; 
+	-fx-border-width: 1;
+	-fx-border-color: #009900;
+	-fx-border-radius: 5;
+}
